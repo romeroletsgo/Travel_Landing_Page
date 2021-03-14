@@ -1,0 +1,44 @@
+html {
+    box-sizing: border-box;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: space-between;
+        padding-top: 56px;
+    }
+
+    &__nav {
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &-item {
+            margin-right: 82px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+        &-link {
+            font-size: 18px;
+            line-height: 24px;
+            color: white;
+            text-decoration: none;
+
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 0.75;
+            }
+        }
+    }
+}
