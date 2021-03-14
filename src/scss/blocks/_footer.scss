@@ -1,0 +1,40 @@
+.footer {
+    background: #0e1d28;
+    padding: 119px 0;
+    &__item {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        width: 50%;
+    }
+
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 50%;
+    }
+
+    &__menu-title {
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    &__menu-link {
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__menu-link:hover,
+    .footer__menu-link:focus,
+    .footer__menu-link:active {
+        opacity: 0.75;
+    }
+}
