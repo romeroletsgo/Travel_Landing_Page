@@ -1,0 +1,58 @@
+.tours {
+    margin-top: 131px;
+    &__tour {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 108px;
+        align-items: center;
+        margin-bottom: 77px;
+    }
+
+    .tour {
+        &__info {
+            padding-left: 47px;
+        }
+
+        &__img {
+            overflow: hidden;
+        }
+        &__pic {
+            transition: 1s all;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        &__title {
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 85px;
+            transition: 1.5s all;
+            &:hover,
+            &:focus {
+                color: #0b75ff;
+            }
+        }
+        &__desc {
+            line-height: 24px;
+            margin-bottom: 58px;
+            transition: 1.5s all;
+            &:hover,
+            &:focus {
+                color: #0b75ff;
+            }
+        }
+        &__more {
+            font-size: 16px;
+            color: #006dfe;
+            text-decoration: none;
+            padding-right: 59px;
+            background: url(../assets/img/arrow-right.svg) no-repeat right center;
+            transition: 0.3s all;
+            &:hover,
+            &:focus {
+                opacity: 0.6;
+            }
+        }
+    }
+}
