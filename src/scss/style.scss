@@ -34,6 +34,26 @@ img {
     margin: 0 auto;
 }
 
+.section-title {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title::after {
+    display: block;
+    content: "";
+    width: 253px;
+    height: 3px;
+    background-color: #006dfe;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
 @import "blocks/_header";
 @import "blocks/_intro";
 @import "blocks/_benefits";
+@import "blocks/_places";

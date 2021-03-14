@@ -1,0 +1,93 @@
+.places {
+    margin-top: 131px;
+
+    &__caption {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 36px;
+    }
+
+    &__title {
+        margin-right: 15px;
+    }
+
+    &__view-all {
+        font-size: 16px;
+        color: #006dfe;
+        text-decoration: none;
+        padding-right: 59px;
+        background: url(../assets/img/arrow-right.svg) no-repeat right center;
+        &:hover,
+        &:focus {
+            opacity: 0.65;
+        }
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+    }
+
+    &__card {
+        position: relative;
+        overflow: hidden;
+        &-size-lg {
+            grid-column: span 3;
+        }
+        &-size-sm {
+            grid-column: span 2;
+        }
+
+        &-title {
+            position: absolute;
+            z-index: 3;
+            font-size: 50px;
+            line-height: 60px;
+            color: white;
+            bottom: 27px;
+            &-size-lg {
+                left: 29px;
+            }
+            &-size-sm {
+                left: 32px;
+            }
+        }
+        &-img {
+            width: 100%;
+            transition: 0.6s all;
+            &-size-lg {
+                height: 354px;
+                object-fit: cover;
+            }
+            &-size-sm {
+                height: 283px;
+                object-fit: cover;
+            }
+        }
+        &:hover &-img {
+            transform: scale(1.05);
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            background: rgba(21, 24, 36, 0.4);
+        }
+        &-link {
+            position: absolute;
+            z-index: 4;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
