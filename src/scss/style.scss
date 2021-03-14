@@ -1,4 +1,5 @@
 @import "blocks/reset";
+@import "blocks/fonts";
 
 html {
     box-sizing: border-box;
@@ -28,4 +29,10 @@ img {
     margin: 0 auto;
 }
 
+.wrapper-full {
+    max-width: 1262px;
+    margin: 0 auto;
+}
+
 @import "blocks/_header";
+@import "blocks/_intro";

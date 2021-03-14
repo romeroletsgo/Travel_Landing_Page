@@ -1,0 +1,61 @@
+.intro {
+    min-height: 100vh;
+    background: url(../assets/img/intro-bg.jpg) center center/cover no-repeat;
+    padding-top: 263px;
+    padding-bottom: 223px;
+    &__title {
+        max-width: 619px;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 60px;
+        color: white;
+        margin-bottom: 22px;
+    }
+    &__subtitle {
+        max-width: 546px;
+        color: white;
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 59px;
+    }
+    &__search-form {
+        display: flex;
+        flex-wrap: wrap;
+        &-info {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        &-field {
+            width: 297px;
+            background: transparent url(../assets/img/circle-ico.svg) no-repeat left 6px;
+            background-size: 20px;
+            border: 0;
+            border-bottom: 2px solid #bfc0c5;
+            margin-right: 60px;
+            padding-left: 43px;
+            padding-bottom: 22px;
+            font-weight: 500;
+            font-size: 18px;
+            color: #fff;
+            &::placeholder {
+                font-weight: 500;
+                font-size: 18px;
+                color: #fff;
+            }
+        }
+        &-submit {
+            padding: 15px 39px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 24px;
+            color: white;
+            background: #1b7dff;
+            border: 0;
+            &:hover,
+            &:focus,
+            &:active {
+                background: #0e66da;
+            }
+        }
+    }
+}
