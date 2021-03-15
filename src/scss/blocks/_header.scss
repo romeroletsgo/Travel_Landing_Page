@@ -7,6 +7,12 @@ html {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 7;
+    transition: 1s all;
+
+    &__active {
+        background: #0e1d28;
+    }
 
     &__wrapper {
         display: flex;
