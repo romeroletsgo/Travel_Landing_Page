@@ -1,8 +1,8 @@
 .intro {
-    height: 962px;
-    background: url(../assets/img/intro-bg.jpg) center center/cover no-repeat;
+    min-height: 100vh;
     padding-top: 263px;
-    padding-bottom: 376px;
+    padding-bottom: 223px;
+    background: url(../assets/img/intro-bg.jpg) center center/cover no-repeat;
     &__title {
         max-width: 619px;
         font-weight: 500;
@@ -19,8 +19,6 @@
         margin-bottom: 59px;
     }
     &__search-form {
-        display: flex;
-        flex-wrap: wrap;
         &-info {
             display: flex;
             flex-wrap: wrap;
