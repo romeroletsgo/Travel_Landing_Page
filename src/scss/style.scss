@@ -27,11 +27,13 @@ img {
 .wrapper {
     max-width: 1060px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .wrapper-full {
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 .section-title {
@@ -61,3 +63,4 @@ img {
 @import "blocks/_visit";
 @import "blocks/_videos";
 @import "blocks/_footer";
+@import "blocks/_media";

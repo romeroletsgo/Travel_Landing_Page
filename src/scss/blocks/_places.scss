@@ -28,7 +28,8 @@
     &__cards {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-gap: 10px;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
     }
 
     &__card {

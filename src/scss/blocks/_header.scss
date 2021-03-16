@@ -10,6 +10,10 @@ html {
     z-index: 7;
     transition: 1s all;
 
+    .hamburger {
+		display: none;
+	}
+
     &__active {
         background: #0e1d28;
     }
@@ -20,6 +24,7 @@ html {
         align-items: flex-end;
         justify-content: space-between;
         padding-top: 56px;
+
     }
 
     &__nav {
